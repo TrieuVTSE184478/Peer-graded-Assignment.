@@ -1,0 +1,51 @@
+/* Default Mobile View (Vertical Layout) */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  margin: 0;
+}
+
+.box {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet View: min-width 772px */
+@media screen and (min-width: 772px) {
+  .box {
+    width: 45vw;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2%;
+  }
+
+  .box img {
+    max-height: 30vh;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Large Screen View: min-width 998px */
+@media screen and (min-width: 998px) {
+  .box {
+    width: 30vw;
+  }
+}
